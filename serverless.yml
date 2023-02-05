@@ -1,0 +1,17 @@
+service: chromium
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: ${opt:stage}
+  region: us-east-1
+
+layers:
+  chromium:
+    name: chromium
+    package:
+      artifact: layer.zip
+    compatibleRuntimes:
+      - nodejs18.x
+    compatibleArchitectures:
+      - x86_64
