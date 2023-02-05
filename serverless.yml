@@ -13,5 +13,7 @@ layers:
       artifact: layer.zip
     compatibleRuntimes:
       - nodejs18.x
+      - nodejs16.x
+      - nodejs14.x
     compatibleArchitectures:
       - x86_64
