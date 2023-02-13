@@ -2,6 +2,6 @@
   "name": "chromium",
   "version": "0.0.0",
   "dependencies": {
-    "@sparticuz/chromium": "^110.0.0"
+    "@sparticuz/chromium": "^110.0.1"
   }
 }
