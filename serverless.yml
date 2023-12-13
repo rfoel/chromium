@@ -2,7 +2,7 @@ service: chromium
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs20.x
   stage: ${opt:stage}
   region: us-east-1
 
@@ -12,8 +12,8 @@ layers:
     package:
       artifact: layer.zip
     compatibleRuntimes:
+      - nodejs20.x
       - nodejs18.x
       - nodejs16.x
-      - nodejs14.x
     compatibleArchitectures:
       - x86_64
